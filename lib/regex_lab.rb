@@ -29,3 +29,9 @@ def valid_phone_number?(phone)
     false
   end
 end
+
+def valid_phone_number?(phone)
+  if phone.match(/\(?\d{3}[) ]?\d{3}[- ]?\d{3}[- ]?/) == nil
+    return false
+    else
+      return true   end end
